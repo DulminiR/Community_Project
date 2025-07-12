@@ -35,7 +35,7 @@ Route::get('/services', [ServiceController::class, 'servicesPage'])->name('servi
 Route::get('/items', [PageController::class, 'items'])->name('items');
 
 
-Route::get('/auth/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::get('/auth/login', [AuthController::class, 'showLoginForm'])->name('auth.login');
 Route::post('/auth/login', [AuthController::class, 'login'])->name('login');
 Route::get('/auth/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 Route::post('/auth/register', [AuthController::class, 'register']);
